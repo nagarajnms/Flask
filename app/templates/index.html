@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>hello {{ user.username }}!</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.name }} says: <b>{{ post.message }}</b></p></div>
+    {% endfor %}
+{% endblock %}
